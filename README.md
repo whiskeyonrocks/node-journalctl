@@ -18,6 +18,11 @@ The optional object `opts` can have the following properties:
  * `all`: Show all fields in full, even if they include unprintable characters or are very long. (cf. man journalctl, option '-a')
  * `lines`: Show the most recent journal events and limit the number of events shown (cf. man journalctl, option '-n')
  * `since`: Start showing entries on or newer than the specified date (cf. man journalctl, option '-S')
+ * `until`: Stop showing entries on or older than the specified date (cf. man journalctl, option '-U')
+ * `utc`: Print timestamps in Coordinated Universal Time (UTC) (cf. man journalctl, option '--utc')
+ * `output`: Specify the output format (cf. man journalctl, option '-o')
+  * Supported formats: 'json', 'json-pretty', 'short', 'short-iso', 'short-monotonic', 'verbose', 'export', 'json-sse'
+
 
 ### Event: 'event'
 
